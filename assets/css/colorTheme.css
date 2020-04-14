@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+nav {
+  background: #fff;
+}
+nav a {
+  color: #000;
+}
+main {
+  background: #555;
+}
+.section1 {
+  background: #444;
+}
+.section2 {
+  background: #333;
+}
+footer {
+  background: #999;
+}
+.imageArea {
+  background: #888;
+}

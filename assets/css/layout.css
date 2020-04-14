@@ -1,0 +1,58 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+      "nav"
+      "main"
+      "image"
+      "sect1"
+      "sect2"
+      "footer";
+	        grid-template-columns: 1fr;
+      grid-template-rows: 10% 30% 30% 5% 5% 20%;
+  }
+  main {
+    grid-area: main;
+  }
+  .section1 {
+    grid-area: sect1;
+  }
+  .section2 {
+    grid-area: sect2;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .imageArea {
+    grid-area: image;
+  }
+  nav {
+    grid-area: nav;
+	  text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  @media only screen and (min-width: 768px) {
+    .container {
+      grid-template-areas:
+        "main main nav"
+        "main main image"
+        "sect1 sect2 image"
+        "footer footer image";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 10% 60% auto;
+    }
+    nav {
+      width: 100%;
+      text-align: right;
+    }
+    nav a {}
+  }
